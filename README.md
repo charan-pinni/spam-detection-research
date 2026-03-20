@@ -5,10 +5,10 @@ multi-lingual-spam-detection-using-methaheuristic-algorithems-sentence-transform
 Reproduce and improve spam detection model on multi-lingual dataset.
 
 ## 🧪 Methodology
-1. Implemented baseline model from research paper tF-idf vectorization,metahuristic algorithem+lr
+1. Implemented baseline model from research paper tF-idf vectorization,metahuristic algor+lr
 2. Proposed improvements:
-   - beter performance on multilingual data
-   - Model tuni
+   - beter performance on multilingual data sentence transformer model+metaheuristic algo+lr
+   - Model tuning
 
 ## 📊 Results
 
