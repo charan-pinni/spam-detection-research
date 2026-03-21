@@ -22,11 +22,13 @@ This project focuses on detecting spam messages in **low-resource and multilingu
 - Applied:
   - Text preprocessing
   - TF-IDF vectorization
-  - Basic classification model
+  - XgBoost
+  - metaheuristic algorithms + Logistic Regression
 - Evaluated using confusion matrix
 
 ### 2. Improvements
 - Used **Sentence Transformers** for multilingual embeddings
+- Dataset: ~2000 SMS messages (spam + ham) original hindi data(IIT-D spam-dataset)
 - Applied **metaheuristic algorithms + Logistic Regression**
 - Performed:
   - Feature selection (XGBoost)
@@ -62,6 +64,7 @@ This project focuses on detecting spam messages in **low-resource and multilingu
 ---
 
 ## 📈 Future Work
+- publish research paper
 - Deploy as a web application
 - Extend to more Indian languages
 - Use transformer fine-tuning (BERT, IndicBERT)
