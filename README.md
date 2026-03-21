@@ -28,7 +28,7 @@ This project focuses on detecting spam messages in **low-resource and multilingu
 
 ### 2. Improvements
 - Used **Sentence Transformers** for multilingual embeddings
-- Dataset: ~2000 SMS messages (spam + ham) original hindi data(IIT-D spam-dataset)
+- Dataset: ~2000 SMS messages (spam + ham) original hindi data(IIIT-D spam-dataset)
 - Applied **metaheuristic algorithms + Logistic Regression**
 - Performed:
   - Feature selection (XGBoost)
