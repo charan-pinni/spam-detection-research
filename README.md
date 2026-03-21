@@ -6,11 +6,11 @@ Reproduce and improve spam detection model on multi-lingual dataset.
 
 #🧪 Methodology
 1. Implemented baseline model from research paper
-   use data set enron 1 contains 5000 records of spam and ham . It is unbalanced data
-   firstly we performed preprocessoing and tf-idf vectorization for feature extraction
-   secondly we use xgboost for feature selection
-   third we applied the hybrid-algo+lr
-   finally we calculated the confusion matrix
+   -use data set enron 1 contains 5000 records of spam and ham . It is unbalanced data
+   -firstly we performed preprocessoing and tf-idf vectorization for feature extraction
+   -secondly we use xgboost for feature selection
+   -third we applied the hybrid-algo+lr
+   -finally we calculated the confusion matrix
  2.Proposed improvements:
    -previous shows beter performance on english data but fails on multi-lingual data
    - we we improved a madel that shows beter performance on multilingual data
