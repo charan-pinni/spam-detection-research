@@ -1,27 +1,75 @@
-# spam-detection-research
-multi-lingual-spam-detection-using-methaheuristic-algorithems-sentence-transformer
+# 📩 Spam Detection Research
 
-# 📌 Objective
-Reproduce and improve spam detection model on multi-lingual dataset.
+**Multi-lingual Spam Detection using Metaheuristic Algorithms + Sentence Transformers**
 
-#🧪 Methodology
-1. Implemented baseline model from research paper
-   -use data set enron 1 contains 5000 records of spam and ham . It is unbalanced data
-   -firstly we performed preprocessoing and tf-idf vectorization for feature extraction
-   -secondly we use xgboost for feature selection
-   -third we applied the hybrid-algo+lr
-   -finally we calculated the confusion matrix
- 2.Proposed improvements:
-   -previous shows beter performance on english data but fails on multi-lingual data
-   - we we improved a madel that shows beter performance on multilingual data
-   - we used sentence transformer for multi-lingual embedings then metaheuristic algo+lr 
-   - Model tuning
+---
 
-#📊 Results
+## 🎯 Objective
+Develop an efficient spam detection model for multilingual SMS data and improve performance over traditional approaches.
 
-| Model        | Accuracy | F1 Score |
-|-------------|--------|---------|
-| Baseline    | 88%    | 0.85    |
-| Improved    | 94%    | 0.92    |
+---
 
+## 📌 Overview
+This project focuses on detecting spam messages in **low-resource and multilingual datasets** (including Hindi). It improves baseline performance using advanced NLP techniques and optimization methods.
 
+---
+
+## ⚙️ Methodology
+
+### 1. Baseline Model
+- Dataset: ~5000 SMS messages (spam + ham)
+- Data was **imbalanced**
+- Applied:
+  - Text preprocessing
+  - TF-IDF vectorization
+  - Basic classification model
+- Evaluated using confusion matrix
+
+### 2. Improvements
+- Used **Sentence Transformers** for multilingual embeddings
+- Applied **metaheuristic algorithms + Logistic Regression**
+- Performed:
+  - Feature selection (XGBoost)
+  - Model tuning
+- Focused on improving performance on multilingual data
+
+---
+
+## 📊 Results
+
+| Model     | Accuracy | F1 Score |
+|----------|---------|---------|
+| Baseline | 88%     | 0.85    |
+| Improved | 94%     | 0.92    |
+
+---
+
+## 🚀 Key Highlights
+- Works on **real-world multilingual data**
+- Handles **class imbalance issues**
+- Combines **deep learning + optimization techniques**
+- Significant improvement in **F1-score (important for imbalanced data)**
+
+---
+
+## 🛠️ Tech Stack
+- Python
+- Scikit-learn
+- XGBoost
+- Sentence Transformers
+- Pandas, NumPy
+
+---
+
+## 📈 Future Work
+- Deploy as a web application
+- Extend to more Indian languages
+- Use transformer fine-tuning (BERT, IndicBERT)
+- Real-time spam detection system
+
+---
+
+## 👨‍💻 Author
+**Charan Pinniboyina**
+
+## 📂 Project Structure
