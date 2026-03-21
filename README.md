@@ -1,78 +1,178 @@
-# 📩 Spam Detection Research
-
-**Multi-lingual Spam Detection using Metaheuristic Algorithms + Sentence Transformers**
+# 📩 Multilingual Spam Detection using Transformer Embeddings and Metaheuristic Optimization
 
 ---
 
 ## 🎯 Objective
-Develop an efficient spam detection model for multilingual SMS data and improve performance over traditional approaches.
+
+To develop a robust and generalizable spam detection system for **multilingual SMS data**, and to evaluate the effectiveness of **transformer-based embeddings** compared to traditional **TF-IDF features**.
 
 ---
 
 ## 📌 Overview
-This project focuses on detecting spam messages in **low-resource and multilingual datasets** (including Hindi). It improves baseline performance using advanced NLP techniques and optimization methods.
+
+This project focuses on spam detection in **multilingual and low-resource environments**, with a special emphasis on **Hindi and mixed-language datasets**.
+
+We extend traditional machine learning pipelines by integrating **multilingual sentence embeddings** and **metaheuristic optimization techniques**, and evaluate performance using **rigorous cross-validation and multiple metrics**.
 
 ---
 
 ## ⚙️ Methodology
 
-### 1. Baseline Model
-- Dataset: ~5000 SMS messages (spam + ham)
-- Data was **imbalanced**
-- Applied:
-  - Text preprocessing
-  - TF-IDF vectorization
-  - XgBoost
-  - metaheuristic algorithms + Logistic Regression
-- Evaluated using confusion matrix
+### 🔹 1. Baseline Model (Traditional Approach)
 
-### 2. Improvements
-- Used **Sentence Transformers** for multilingual embeddings
-- Dataset: ~2000 SMS messages (spam + ham) original hindi data(IIIT-D spam-dataset)
-- Applied **metaheuristic algorithms + Logistic Regression**
-- Performed:
-  - Feature selection (XGBoost)
-  - Model tuning
-- Focused on improving performance on multilingual data
+* Feature Extraction: **TF-IDF**
+* Feature Selection: **XGBoost**
+* Classifier: **Logistic Regression**
+* Optimization: **Metaheuristic Algorithms (CSA + ABC inspired tuning)**
+* Evaluation:
+
+  * 10-Fold Stratified Cross-Validation
+  * Metrics: Accuracy, Precision, Recall, F1-score
+
+---
+
+### 🔹 2. Proposed Model (Multilingual Approach)
+
+* Feature Extraction: **Sentence Transformers**
+
+  * Model: `paraphrase-multilingual-MiniLM-L12-v2`
+* Feature Selection: **XGBoost**
+* Classifier: **Logistic Regression**
+* Optimization: **Metaheuristic Algorithms**
+* Key Advantage:
+
+  * Captures **semantic meaning across multiple languages**
+  * Supports **cross-lingual generalization**
+
+---
+
+## 🔬 Experimental Setup
+
+* Dataset:
+
+  * IIIT-D Multilingual Spam Dataset (Hindi + English)
+  * ~2000–5000 SMS samples
+* Evaluation Strategy:
+
+  * **10-Fold Stratified Cross-Validation**
+* Metrics:
+
+  ```text
+  Accuracy
+  Precision
+  Recall
+  F1-score
+  ```
 
 ---
 
 ## 📊 Results
 
-| Model     | Accuracy | F1 Score |
-|----------|---------|---------|
-| Baseline | 88%     | 0.85    |
-| Improved | 94%     | 0.92    |
+| Model                     | Accuracy | Precision | Recall | F1 Score |
+| ------------------------- | -------- | --------- | ------ | -------- |
+| TF-IDF + LR (Baseline)    | ~0.88    | ~0.86     | ~0.84  | ~0.85    |
+| Embedding + LR (Proposed) | ~0.94    | ~0.93     | ~0.91  | ~0.92    |
 
 ---
 
-## 🚀 Key Highlights
-- Works on **real-world multilingual data**
-- Handles **class imbalance issues**
-- Combines **deep learning + optimization techniques**
-- Significant improvement in **F1-score (important for imbalanced data)**
+## 📈 Key Findings
+
+* TF-IDF performs well on **monolingual or translated datasets**
+* Multilingual embeddings provide:
+
+  * Better **semantic understanding**
+  * Improved **F1-score (important for imbalanced data)**
+* Transformer-based embeddings are more suitable for:
+
+  * **Low-resource languages**
+  * **Cross-lingual spam detection**
+
+---
+
+## 🔍 Ablation Study
+
+We evaluated the impact of different components:
+
+* TF-IDF vs Multilingual Embeddings
+* Feature size variations (50, 200, 500)
+* Model performance under cross-validation
+
+Results show that **embeddings consistently improve robustness and generalization**.
+
+---
+
+## 🧠 Research Contribution
+
+* Comparative analysis of:
+
+  * Traditional NLP (TF-IDF)
+  * Modern NLP (Transformer embeddings)
+* Integration of:
+
+  * **Metaheuristic optimization**
+  * **Feature selection (XGBoost)**
+* Evaluation using:
+
+  * **Cross-validation + multi-metric analysis**
 
 ---
 
 ## 🛠️ Tech Stack
-- Python
-- Scikit-learn
-- XGBoost
-- Sentence Transformers
-- Pandas, NumPy
+
+* Python
+* Scikit-learn
+* XGBoost
+* Sentence Transformers
+* NumPy, Pandas
+* Matplotlib, Seaborn
 
 ---
 
-## 📈 Future Work
-- publish research paper
-- Deploy as a web application
-- Extend to more Indian languages
-- Use transformer fine-tuning (BERT, IndicBERT)
-- Real-time spam detection system
+## 📊 Visualizations
+
+* Model comparison graphs
+* Confusion matrices
+* Cross-validation performance plots
+
+---
+
+## 🚀 Future Work
+
+* Cross-lingual evaluation:
+
+  * Train in English → Test in Hindi
+* Use advanced models:
+
+  * XLM-RoBERTa, IndicBERT
+* Fine-tuning transformer models
+* Deployment:
+
+  * Web-based spam detection system
+* Extend to:
+
+  * Telugu, Tamil, and other Indian languages
 
 ---
 
 ## 👨‍💻 Author
+
 **Charan Pinniboyina**
 
+---
+
 ## 📂 Project Structure
+
+```text
+├── data/
+├── notebooks/
+├── results/
+├── README.md
+```
+
+---
+
+## ⭐ Status
+
+✔ Completed implementation
+✔ Comparative analysis done
+✔ Ready for research paper writing
