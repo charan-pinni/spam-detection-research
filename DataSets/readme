@@ -1,13 +1,17 @@
 Datasets i used in the project
 
 1.enron1
-is a csv file that contains 5100 emails-- 71% spam and 21% ham 
+-is a csv file that contains 5100 emails-- 71% spam and 21% ham 
 
 2.IIIT-D_SMS_Dataset
-This is collection of 2000 real hindhi sms 
-it is a blanced dataset-50% spam and 50% ham
+-This is collection of 2000 real hindhi sms 
+-it is a blanced dataset-50% spam and 50% ham
 
 3.rajnathpatel/multilingual-spam-data
-It is a csv file contains 20,000 messages
-contains hindhi,english,spanish data
-They is not the real , They were machine translated
+-It is a csv file contains 20,000 messages
+-contains hindhi,english,spanish data
+-They is not the real , They were machine translated
+4.chinese-spam-10000
+-https://huggingface.co/datasets/reatiny/chinese-spam-10000
+-it contains real chinese language (mandarin)
+-it is a balanced data of 10,000 records
