@@ -73,8 +73,8 @@ We extend traditional machine learning pipelines by integrating **multilingual s
 
 | Model                     | Accuracy | Precision | Recall | F1 Score |
 | ------------------------- | -------- | --------- | ------ | -------- |
-| TF-IDF + LR (Baseline)    | ~0.88    | ~0.86     | ~0.84  | ~0.85    |
-| Embedding + LR (Proposed) | ~0.94    | ~0.93     | ~0.91  | ~0.92    |
+| TF-IDF + LR (Baseline)    | ~0.61    | ~0.96     | ~0.22  | ~0.36    |
+| Embedding + LR (Proposed) | ~0.67    | ~0.88     | ~0.39  | ~0.54    |
 
 ---
 
