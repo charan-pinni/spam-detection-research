@@ -50,8 +50,11 @@ We extend traditional machine learning pipelines by integrating **multilingual s
 
 * Dataset:
 
-  * IIIT-D Multilingual Spam Dataset (Hindi + English)
-  * ~2000–5000 SMS samples
+  1. IIIT-D Multilingual Spam Dataset (Hindi + English)
+     * ~2000–5000 SMS samples
+  2. reatiny/chinese-spam-10000
+     * contains 10000 spam records in mandarin
+     * it is balanced
 * Evaluation Strategy:
 
   * **10-Fold Stratified Cross-Validation**
